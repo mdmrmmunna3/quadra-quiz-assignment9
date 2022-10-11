@@ -1,0 +1,9 @@
+
+.nav-container {
+    background-color: #0F3443;
+}
+.link a {
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
