@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Assignment Name 
+
+### `Quadra-Quiz-Contest`
+
+# Netlify Live Site Link 
+
+[Netlify Live Site Link ](https://quadra-quiz-contest.netlify.app/)
+
+# Assignment Description 
+
+* first i create some route in components and show route on ui from navbar
+
+* Then i create root route and send to route on main intro the children
+* Then using fetch to load the data from the Api
+* call api dynamically
+* The Correct answers and wrong answers to the questions are shown by toasts
+* if you click on the eye icon, the correct answer to the questions will be shown through a toast.
+* use to be tailwind css, hero-icons, react-router, rechart and other also
+* create a responsive website.
+
 ## Available Scripts
 
 In the project directory, you can run:
