@@ -6,7 +6,7 @@ import Option from '../Option/Option';
 
 
 const QuizQuesAns = ({ quizQuesList }) => {
-    const { index, question, correctAnswer, options } = quizQuesList;
+    const { question, correctAnswer, options } = quizQuesList;
 
     const showToastMessage = () => {
         toast.success(correctAnswer, {
@@ -30,8 +30,8 @@ const QuizQuesAns = ({ quizQuesList }) => {
 
                 {
                     options.map(option => <Option
-                        key={index}
-                        option={option}
+                        key={options.indexOf(option)}
+                        option={options}
                         correctAnswer={correctAnswer}></Option>)
                 }
 
