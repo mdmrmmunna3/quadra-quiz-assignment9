@@ -10,13 +10,15 @@ const Statistics = () => {
     return (
         <div>
             <h3 className='lg:text-2xl text-fuchsia-500 font-semibold text-center mb-3'>Quiz Rechart Are Here:</h3>
-            <div className='flex justify-center items-center'>
-                <LineChart width={400} height={400} data={newRechart}>
-                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip></Tooltip>
-                </LineChart>
+            <div >
+                <ResponsiveContainer width={"100%"} aspect={2}>
+                    <LineChart width={500} height={500} data={newRechart}>
+                        <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip></Tooltip>
+                    </LineChart>
+                </ResponsiveContainer>
             </div>
         </div>
     );
