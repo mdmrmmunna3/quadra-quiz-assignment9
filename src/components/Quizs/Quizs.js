@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Quizs = ({ quizData }) => {
+const Quizs = ({ quiz }) => {
 
-    const { id, name, logo, total } = quizData;
+    const { id, name, logo, total } = quiz;
     return (
         <div>
             <div className='mt-7 p-2 sm:w-full rounded border-gray-200 shadow-md'>
