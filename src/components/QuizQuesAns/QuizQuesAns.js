@@ -31,7 +31,7 @@ const QuizQuesAns = ({ quizQuesList }) => {
                 {
                     options.map(option => <Option
                         key={options.indexOf(option)}
-                        option={options}
+                        option={option}
                         correctAnswer={correctAnswer}></Option>)
                 }
 
