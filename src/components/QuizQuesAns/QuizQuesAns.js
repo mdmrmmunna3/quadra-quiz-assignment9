@@ -1,6 +1,5 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
 
-import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Option from '../Option/Option';
@@ -8,6 +7,7 @@ import Option from '../Option/Option';
 
 const QuizQuesAns = ({ quizQuesList }) => {
     const { index, question, correctAnswer, options } = quizQuesList;
+
     const showToastMessage = () => {
         toast.success(correctAnswer, {
             position: toast.POSITION.TOP_CENTER
@@ -25,14 +25,14 @@ const QuizQuesAns = ({ quizQuesList }) => {
                         <EyeIcon onClick={showToastMessage} className='text-4xl h-6'></EyeIcon> 
             
                     <ToastContainer />
-                        {/* <EyeIcon className='h-6'>{correctAnswer}</EyeIcon> */}
                     </div>
                 </div>
 
                 {
                     options.map(option => <Option
-                        key={option[index]}
-                        option={option}></Option>)
+                        key={index}
+                        option={option}
+                        correctAnswer={correctAnswer}></Option>)
                 }
 
             </div>
@@ -43,10 +43,3 @@ const QuizQuesAns = ({ quizQuesList }) => {
 
 export default QuizQuesAns;
 
-{/* <button> <EyeIcon onClick={showToastMessage} className='text-4xl'></EyeIcon> </button>
-                <ToastContainer />
-                const showToastMessage = () => {
-                    toast.success(correctAnswer, {
-                        position: toast.POSITION.TOP_CENTER
-                    });
-                }; */}
