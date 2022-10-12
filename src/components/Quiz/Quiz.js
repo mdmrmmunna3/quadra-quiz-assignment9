@@ -9,7 +9,7 @@ const Quiz = () => {
     console.log(quizQuesAns)
     return (
         <div>
-            <h2 className='text-blue-500'>Name of Quiz: {quizQuesAnsList.data.name}</h2>
+            <h2 className='text-blue-500 text-center font-bold mt-4 text-xl md:text-2xl lg:text-3xl'>Name of Quiz: {quizQuesAnsList.data.name}</h2>
             {
                 quizQuesAns.map(quizQuesList => <QuizQuesAns
                      key={quizQuesList.id} 
